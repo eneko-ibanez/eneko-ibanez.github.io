@@ -33,7 +33,7 @@
 }
 
 .cabecera a:hover {
-    background-color: #00af3b;
+    background-color: #007daf;
 }
 
 .cabecera a {
@@ -50,7 +50,7 @@
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: #191919;
+    background-color: #828282c8;
 }
 
 .dropdown:hover .dropdown_content {
