@@ -6,7 +6,7 @@
     width: 100%;
     margin-top: 0;
     padding-bottom: 1.1%;
-    opacity: 85%;
+    opacity: 95%;
 }
 
 .menu {
@@ -45,7 +45,9 @@
 .cabecera a:hover {
     background-color: #00b7ff;
 }
-
+.cabecera a:hover {
+    opacity: 85%;
+}
 .cabecera a {
     padding-inline: 30px;
     padding-block: 20px;
