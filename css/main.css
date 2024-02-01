@@ -6,8 +6,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: repeat( auto , 200px);
-    margin-top: 2.5%;
-    margin-inline: 2%;
+}
+body{
+    margin: 0;
 }
 /***********************/
 /* PANEL FRONTAL       */
@@ -16,9 +17,11 @@
 .panel_frontal{
     grid-row: 1;
     grid-column: 1 / 5;
+    margin-top: 0;
 }
 .panel_frontal img{
-    height: 500px;
+    margin-top: 0;
+    height: 600px;
     width: 100%;
 }
 
@@ -29,7 +32,7 @@
 .panel_navegacion {
     grid-column-start: 1 ;
     grid-column-end: 2 ;
-    grid-row: 2 / 6;
+    grid-row: 2 / 4;
     border-style: groove;
     margin-inline: 5%;
     margin-top: 0;
