@@ -24,35 +24,6 @@ body{
     height: 800px;
     width: 100%;
 }
-
-
-/***********************/
-/* PANEL DE NAVEGACIÓN */
-/***********************/
-.panel_navegacion {
-    grid-column-start: 1 ;
-    grid-column-end: 2 ;
-    grid-row: 2 / 4;
-    border-style: groove;
-    margin-inline: 5%;
-    margin-top: 0;
-    background-color: white;
-}
-.panel_navegacion a{
-    text-decoration: none;
-    color: black;
-}
-.panel_navegacion li{
-    list-style: none;
-}
-.panel_navegacion h3{
-    background-color: #20b9f1;
-    color: black;
-    margin: 0%;
-    padding-block: 2%;
-    text-align: center;
-}
-
 /*****************/
 /* PARRAFOS */
 /*****************/
@@ -74,7 +45,7 @@ body{
 }
 .parrafo_4{
     grid-column: 3;
-    grid-row: 5;
+    grid-row: 1 / 5;
 }
 
 /*****************/
