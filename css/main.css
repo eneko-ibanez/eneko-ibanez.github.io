@@ -24,6 +24,9 @@ body{
     height: 800px;
     width: 100%;
 }
+
+
+
 /*****************/
 /* PARRAFOS */
 /*****************/
@@ -54,7 +57,7 @@ body{
 
 
 .imagen_1{
-    grid-column: 3;
+    grid-column: 3 / 4;
     grid-row: 2;
 }
 .imagen_1 img{
