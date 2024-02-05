@@ -1,0 +1,39 @@
+img {
+    width: 100%;
+}
+
+.cuerpo {
+    width: 100%;
+    margin: auto;
+}
+
+.carta {
+    display: inline-block;
+    width:calc(33% - 20px);
+    text-align: justify;
+    margin-inline: 5px;
+    margin-bottom: 20px;
+}
+
+.mecanica {
+    z-index: 1;
+    position: relative;
+    
+}
+
+.descripcion {
+    opacity: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    margin-top: 0;
+    
+}
+
+.mecanica:hover  {
+    opacity: 0;
+    transition-duration: 3s;
+}
+
+
+
