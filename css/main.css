@@ -24,6 +24,35 @@ body{
     height: 800px;
     width: 100%;
 }
+.material-symbols-outlined{
+    position: absolute;
+    top: 5%;
+    left: -50px;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    animation: moveOche 5s linear infinite;
+  }
+
+  @keyframes moveOche {
+    0% { left: -50px; }
+    100% { left: calc(100% + 50px); }
+  }
+.material-symbols-outlined1{
+    position: absolute;
+    top: 5%;
+    left: -50px;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    animation: moveOche 5s linear infinite;
+  }
+
+  @keyframes moveOche {
+    0% { left: -50px; }
+    100% { left: calc(100% + 50px); }
+  }
+
 
 
 

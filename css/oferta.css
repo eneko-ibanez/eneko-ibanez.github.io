@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px;
-    
 }
 
 .tarjeta {
@@ -17,7 +16,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 0.5s ease; 
+    transition: opacity 0.5s ease; /* Transición de opacidad */
 }
 
 .tarjeta p {
@@ -32,17 +31,17 @@
     color: rgb(0, 0, 0);
     font-size: 24px;
     opacity: 0;
-    transition: opacity 0.5s ease; 
-    
+    transition: opacity 0.5s ease; /* Transición de opacidad */
 }
 
 .tarjeta:hover img {
-    opacity: 0; 
+    opacity: 0; /* Ocultar la imagen al pasar el mouse */
 }
 
 .tarjeta:hover {
-    opacity: 1;
+    opacity: 1; /* Revelar el texto al pasar el mouse */
 }
+
 .tarjeta:hover p {
-    opacity: 1; 
+    opacity: 1; /* Hacer visible el texto al pasar el mouse */
 }
