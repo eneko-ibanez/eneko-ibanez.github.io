@@ -33,3 +33,19 @@
     height: 100px;
     width: 100px;
 }
+.pie_enlaces_interes img {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 100px;
+    }
+
+    to {
+    margin-left: 0%;
+    width: 100px;
+    }
+}

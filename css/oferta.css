@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px;
+    
 }
 
 .tarjeta {
@@ -14,9 +15,9 @@
 
 .tarjeta img {
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
-    transition: opacity 0.5s ease; /
+    transition: opacity 0.5s ease; 
 }
 
 .tarjeta p {
@@ -31,7 +32,8 @@
     color: rgb(0, 0, 0);
     font-size: 24px;
     opacity: 0;
-    transition: opacity 0.5s ease; /* Transición de opacidad */
+    transition: opacity 0.5s ease; 
+    
 }
 
 .tarjeta:hover img {
