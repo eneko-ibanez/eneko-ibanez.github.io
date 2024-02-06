@@ -31,7 +31,7 @@ body{
     width: 50px;
     height: 30px;
     border-radius: 15px;
-    animation: moveOche 5s linear infinite;
+    animation: moveOche 15s linear infinite;
   }
 
   @keyframes moveOche {
@@ -45,7 +45,7 @@ body{
     width: 50px;
     height: 30px;
     border-radius: 15px;
-    animation: moveOche 5s linear infinite;
+    animation: moveOche 50s linear infinite;
   }
 
   @keyframes moveOche {
