@@ -57,7 +57,7 @@
     <div class="cuerpo"> 
         <div class="panel_frontal">
             <img src="../imagenes/seat-ateca.jpg" alt="">
-          <a href="https://youtu.be/9R83kCCaqGw"><span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" id="motoIcon">
             two_wheeler
             </span></a>
         </div>
@@ -88,5 +88,44 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var motoIcon = document.getElementById("motoIcon");
+            var speedIncrement = 0.5; // Incremento de velocidad por clic
+            var maxSpeed = 5; // Límite máximo de velocidad
+
+            var intervalId = null;
+            var audio = new Audio('https://youtu.be/ZadBqUJlSaA'); // Reemplaza con la ruta correcta de tu archivo de audio
+
+            motoIcon.addEventListener("click", function () {
+                // Detener intervalo anterior si existe
+                if (intervalId) {
+                    clearInterval(intervalId);
+                }
+
+                // Reproducir sonido de Mario Kart
+                audio.play();
+
+                // Cambiar color continuamente
+                intervalId = setInterval(function () {
+                    motoIcon.style.color = getRandomColor();
+                }, 200); // Cambia de color cada 500 ms
+
+                // Aumentar velocidad hasta el límite máximo
+                var currentSpeed = parseFloat(motoIcon.style.animationDuration) || 15;
+                var newSpeed = Math.max(currentSpeed - speedIncrement, maxSpeed) + "s";
+                motoIcon.style.animationDuration = newSpeed;
+            });
+
+            function getRandomColor() {
+                var letters = "0123456789ABCDEF";
+                var color = "#";
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+        });
+    </script>
 </body>
 </html>

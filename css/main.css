@@ -110,22 +110,48 @@ body{
     width: 500px;
 }
 
-  .imagen_1 img {
+.imagen_1 img {
     animation-duration: 3s;
     animation-name: slidein;
 }
 
 @keyframes slidein {
     from {
-    margin-left: 100%;
-    width: 200%;
+        margin-left: 100%;
+        width: auto;
     }
 
     to {
-    width: auto;
+        margin-left: 0;
     }
-}  .imagen_3 img {
+}
+.imagen_3 img {
     animation-duration: 3s;
-    animation-name: slidein;
+    animation-name: slidein3;
 }
 
+@keyframes slidein3 {
+    from {
+        margin-left: 100%;
+        width: auto;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+.imagen_2 img {
+    animation-duration: 3s;
+    animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+    from {
+        margin-left: -100%;
+        width: auto;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}

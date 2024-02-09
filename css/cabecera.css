@@ -81,3 +81,22 @@
     position: relative;
     top: 5px;
 }
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 2; /* Asegúrate de que el z-index sea mayor que el de las imágenes */
+    background-color: #828282c8;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown_content a {
+    display: block;
+}
+
