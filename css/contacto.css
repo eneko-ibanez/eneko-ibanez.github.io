@@ -1,3 +1,117 @@
+*{
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto; 
+   
+}
+
+.coche {
+    position: relative;
+    display: block;
+    height: 400px;
+    overflow: hidden;/* Para asegurarse de que la imagen no se desborde en pantallas pequeñas */
+}
+.coche img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para mantener la relación de aspecto de la imagen */
+}
+.titulo {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%); /* Centrar el texto horizontal y verticalmente */
+    z-index: 1;
+}
+
 h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.divparrafo{
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    width: 90%; 
+    margin-left: auto; /* Centrar el párrafo horizontalmente */
+    margin-right: auto; /* Centrar el párrafo horizontalmente */
+    text-align: center;
+    color: rgb(77, 75, 75);
+    
+}
+.divparrafo .parrafo1 {
+    
+    font-size: 50px;
+    color: black;
+    
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre las tarjetas */
+    flex-wrap: wrap; /* Envolver las tarjetas en múltiples líneas si es necesario */
+    width: 90%; 
+    margin-left: auto; /* Centrar el párrafo horizontalmente */
+    margin-right: auto; /* Centrar el párrafo horizontalmente */
+}
+
+.card, .card_content {
+    flex: 0 0 45%; /* Establecer el ancho de las tarjetas */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    text-align: center;
+    display: flex; /* Utilizar flexbox para centrar verticalmente */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    font-size: 18px;
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Para mantener la proporción de la imagen */
+ 
+}
+
+.card_content:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al pasar el cursor */
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    h1{
+        display: none;
+    }
+    .coche {
+        height: 200px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    .divparrafo {
+        width: 100%; /* Ancho del párrafo al 100% para pantallas más pequeñas */
+    }
+
+    .card {
+        width: 90%; /* Ancho de las tarjetas al 90% para pantallas más pequeñas */
+    }
+}
+
+@media screen and (min-width: 768px) {
+   
 }
