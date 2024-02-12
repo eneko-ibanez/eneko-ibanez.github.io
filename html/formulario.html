@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Formulario</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='../css/import.css'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="shortcut icon" href="../imagenes/logo-search-grid-1x.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/import.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/formulario.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="../imagenes/logo-search-grid-1x.png" type="image/x-icon">
     <script src='main.js'></script>
 </head>
 
@@ -15,15 +17,14 @@
     <div class="cabecera">
         <div class="menu">
             <div class="menu_buttons">
-                <a href="index.html" target="_blank">Indice</a><!--
-        --><a href="pagina_principal.html" target="_blank">Página Principal</a><!--
-        -->
+                <a href="index.html" target="_blank">Indice</a>
+                <a href="pagina_principal.html" target="_blank">Página Principal</a>
                 <div class="dropdown">
                     <a>Ofertas destacadas<i class="material-icons">expand_more</i></a>
                     <div class="dropdown_content">
-                        <a href="../html/ofertas_destacadas_ambas.html" target="_blank">Todos los vehiculos</a><!--
-                --><a href="../html/ofertas_destacadas_coches.html" target="_blank">Coches</a><!--
-                --><a href="../html/ofertas_destacadas_motos.html" target="_blank">motos</a>
+                        <a href="../html/ofertas_destacadas_ambas.html" target="_blank">Todos los vehiculos</a>
+                        <a href="../html/ofertas_destacadas_coches.html" target="_blank">Coches</a>
+                        <a href="../html/ofertas_destacadas_motos.html" target="_blank">motos</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -54,33 +55,46 @@
             </div>
         </div>
     </div>
+    <div class="animation">
+        <img src="../imagenes/logo-search-grid-1x.png" alt="logo">
+    </div>
     <div class="container">
-        <form action="./formulario.html" method="get">
-            <label for="trato">Trato*</label>
-            <label for="Sr">Sr</label>
-            <input type="radio" id="Sr" name="trato" />
-            <label for="Sra">Sra</label>
-            <input type="radio" id="Sra" name="trato" />
-            <br />
-            <br />
-            <label for="nombre_completo">Nombre*</label>
-            <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Nombre Completo *" style="width: 198px;"/>
-            <br />
-            <br />
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Telefono" style="width: 200px;" />
-            <br />
-            <br />
-            <label for="email">Email*  </label>
-            <input type="email" id="email" name="email" placeholder="Email *" style="width: 210px;" />
-            <br />
-            <br />
-            <label for="Mensaje"></label>
-            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="10" cols="30"></textarea>
-            <br />
-            <br />
-            <input type="submit" value="Enviar" style="width: 260px;"/>
-        </form>
+        <div class="imagen">
+            <img src="../imagenes/formulario.jpg" alt="coche">    
+        </div>
+        <div class="formulario">
+            <form action="./formulario.html" method="get">
+                <label for="trato">Trato*</label>
+                <label for="Sr">Sr</label>
+                <input type="radio" id="Sr" name="trato" />
+                <label for="Sra">Sra</label>
+                <input type="radio" id="Sra" name="trato" />
+                <br />
+                <br />
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre*"
+                  required  style="width: 198px;" />
+                <label for="Apellido1">Apellido*</label>
+                <input type="text" id="Apellido1" name="Apellido1" placeholder="Apellido1" required
+                    style="width: 198px;" />
+                <label for="Apellido2">Apellido</label>
+                <input type="text" id="Apellido2" name="Apellido2" placeholder="Apellido2"
+                    style="width: 198px;" />        
+                <br />
+                <br />
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Telefono" style="width: 200px;" />
+                <label for="email">Email* </label>
+                <input type="email" id="email" name="email" placeholder="Email *" style="width: 210px;" required />
+                <br />
+                <br />
+                <label for="Mensaje"></label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="10" cols="30"></textarea>
+                <br />
+                <br />
+                <input type="submit" value="Enviar" style="width: 260px;" />
+            </form>
+        </div>
     </div>
 
 </body>
