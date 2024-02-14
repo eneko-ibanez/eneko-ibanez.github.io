@@ -2,6 +2,9 @@
     font-family: Arial, sans-serif;
 }
 
+.formulario{
+    position: relative;
+}
 .container {
     width: 80%;
     margin: 0 auto;
@@ -9,13 +12,14 @@
     text-align: center;
     font-size: 20px;
     padding: 30px;
+   
 
 }
 
 
 
 .animation {
-    
+
     height: 125px;
     width: 125px;
     animation-name: desplazamiento;
@@ -25,21 +29,58 @@
 }
 
 @keyframes desplazamiento {
-    0%{
+    0% {
         margin-left: 118px;
         transform: rotate(0deg);
 
-     }
-    50%{
+    }
+
+    50% {
         margin-left: 1200px;
         transform: rotate(360deg);
-       
+
 
 
     }
-    100%{
+
+    100% {
         margin-left: 118px;
         transform: rotate(0deg);
-        
+
     }
+}
+
+.icono_2 {
+    width: 150px;
+    height: 150px;
+    background-color: azure;
+    display: inline-block;
+    right: 125px;
+    bottom: 68px;
+    position: absolute;
+
+}
+
+.icono_1 {
+    width: 150px;
+    height: 150px;
+    background-color: azure;
+    display: inline-block;
+    left: 125px;
+    bottom: 68px;
+    position: absolute;
+
+}
+
+.icono_1 img{
+    width: 150px;
+    height: 150px;
+}
+.icono_2 img{
+    width: 150px;
+    height: 150px;
+}
+
+.icono_1 img:hover{
+    background-image: none;
 }
