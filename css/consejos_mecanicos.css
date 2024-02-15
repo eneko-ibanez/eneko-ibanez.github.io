@@ -1,48 +1,70 @@
-.coche_combustion img {
-    width: 100%;
-}
-
-.coche_electrico img {
-    width: 100%;
-}
-
-.moto img {
-    width: 100%;
-}
-
 body {
-    background-color: rgb(240, 240, 240) ;
+    background-color: rgb(240, 240, 240);
 }
 
-.organizacion {
-    display: grid;
-    grid-template-columns: 15% auto 30%;
-    background-color: rgb(240, 240, 240);
+.cuerpo img {
+    width: 100%;
     margin-top: 10px;
 }
 
-.cuerpo {
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-    text-align: justify; 
-    border-color:rgb(18, 19, 20) ;
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.distribucion {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% auto;
+    
+}
+
+.cuerpo {
+    margin-right: 25px;
+
+    border-style: outset;
+    border-color: rgb(209, 209, 209);
+    padding-inline: 10px;
+    
+    
+}
+
+p {
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .vertical {
-    border-style: groove;
+    border-style: outset;
     border-color:  rgb(168, 167, 167);
-    height: 100%;
+    height: 2215px;
     width: 400px;
     background-color: rgb(206, 206, 206);
 }
 
-.vertical_iz {
-    border-style: groove;
-    border-color:  rgb(168, 167, 167);
-    height: 100%;
-    background-color: rgb(206, 206, 206);
-}
 .borde{
     border-style: groove;
     border-color: rgb(168, 167, 167);
@@ -60,10 +82,12 @@ body {
     margin: auto;
     margin-bottom: 10px;
     margin-top: 10px; 
-
 }
+
+
 
 .vertical1 { background-image: url(../imagenes/vertical1.jpg); background-size: cover; }
 .vertical2 { background-image: url(../imagenes/vertical2.avif); background-size: cover; }
 .mapfre { background-image: url(../imagenes/mapfre.png); background-size: cover; }
-
+.seguro { background-image: url(../imagenes/seguro_vida.webp); background-size: cover;
+ }

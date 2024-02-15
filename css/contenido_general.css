@@ -1,51 +1,84 @@
-img {
-    width: 100%;
+body {
+    background-color: rgb(206, 206, 206);
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(195, 195, 195);
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    margin-top: 0;
+    padding: 10px;
 }
 
 .cuerpo {
     width: 100%;
     margin: auto;
-
 }
 
 .carta {
     display: inline-block;
-    width:calc(33% - 20px);
+    width:calc(50% - 14px);
+    height: 650px;
     text-align: justify;
     margin-inline: 5px;
-    margin-bottom: 20px;
-    background-color: rgb(234, 230, 230);
-    z-index: -1;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 5%;
 }
 
-.carta img {
-    z-index: 1;
-    position: relative;
-    
+.mecanica { background-image: url(../imagenes/mecanica.png); background-size: cover; }
+.noticias { background-image: url(../imagenes/noticias.jpg); background-size: cover; }
+.celectrico { background-image: url(../imagenes/coche_electrico.jpg); background-size: cover; }
+.cgasolina { background-image: url(../imagenes/coche_gasolina.jpg); background-size: cover; }
+.motos { background-image: url(../imagenes/moto.jpg); background-size: cover; }
+.preguntas { background-image: url(../imagenes/preguntas.jpg); background-size: cover; }
+
+.centrar {
+    margin-top: auto;
 }
+
 
 .descripcion {
-    opacity: 100%;
-    z-index: 0;
     position: absolute;
-    margin-top: 0;    
-}
-
-.carta:hover  img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    transition-duration: 1.5s;
-    transition-property: initial;
+    font-size: 45px;
+    background-color: rgb(240, 240, 240);
+    transition: 1s;
+    border-radius: 5%;
 }
 
-@media screen and ((min-width: 768px) and (max-width: 1024px)  ) {  
-    .card{
-        width: calc(50% - 20px)
-    }
+.descripcion p {
+    position: absolute;
+    top: 37%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
-@media screen and ((min-width: 360px) and (max-width: 400px)  ) {  
-    .card{
-        width: calc(100% - 20px)
-    }
+
+.descripcion:hover {
+    opacity: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
 
