@@ -1,7 +1,12 @@
 * {
     font-family: Arial, sans-serif;
-
+    
 }
+
+body{
+    background-color: white;
+}
+
 
 .container {
     width: 90%;
@@ -27,6 +32,7 @@
 }
 
 .titulo {
+    
     position: absolute;
     top: 33%;
     right: 10%;
@@ -34,9 +40,12 @@
 }
 
 h1 {
+    
     color: white;
     font-size: 40px;
 }
+
+
 
 .divparrafo {
     text-align: center;
@@ -78,16 +87,13 @@ h1 {
     flex: 0 0 45%;
     /* Establecer el ancho de las tarjetas */
     margin-bottom: 20px;
-    /* Espacio entre las tarjetas */
     text-align: center;
     display: flex;
-    /* Utilizar flexbox para centrar verticalmente */
     flex-direction: column;
-    /* Alinear elementos verticalmente */
     justify-content: center;
-    /* Centrar verticalmente */
     font-size: 18px;
     margin: 25px;
+    
 }
 
 .card img {
@@ -97,15 +103,17 @@ h1 {
 
 }
 
-.card_content:hover {
-    transform: scale(1.2);
-    /* Aumenta el tamaño de la imagen al pasar el cursor */
+ .card_content:hover {
+    transform: scale(1.1);
     border:solid rgb(141, 143, 145) 5px;
     border-radius: 15px;
-    background-color: white;
-    transition: all 3s;
-
+    transition: all 100ms;
+    
 }
+
+
+
+
 
 a {
     color: rgb(77, 75, 75);

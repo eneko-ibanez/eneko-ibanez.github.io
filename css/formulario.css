@@ -2,15 +2,34 @@
     font-family: Arial, sans-serif;
 }
 
+body{
+    background-color: white;
+}
+
 h1{
     text-align: center;
     background-color:rgb(215, 214, 218) ;
     height: 80px;
     color: white;
 }
-.formulario{
-    position: relative;
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+   
 }
+
+.formulario {
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 10px
+    
+}
+
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -22,7 +41,9 @@ h1{
 
 }
 
-
+.animation img {
+    height: 75%;
+}
 
 .animation {
 
@@ -56,32 +77,57 @@ h1{
     }
 }
 
-.icono_2 {
+.imagen img {
+    width: 75%;
+    margin: auto;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario textarea {
+    width: calc(50% - 10px);
+    margin-bottom: 15px;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"]{
+    background-color: blueviolet;
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+
+
+.target {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 86%; 
+    margin-left: auto; 
+    margin-right: auto; /* Margen derecho para separar del borde de la pantalla */
+    gap: 20px;
+  
     
-    right: 8px;
-    bottom: 168px;
-    position: absolute;
 
 }
 
-.icono_1 {
-    width: 25%;
-    position: absolute;
-
-}
-
-.icono_1 img {
-    max-width: 100%;
-    height: auto;
+.cards {
+    flex: 0 0 calc(40% - 20px); /* Ajusta el ancho de las tarjetas */
+    
+    text-align: center;
+    margin: 15px;
     
 }
 
-.icono_2 img{
-    height: 200px;
-}
+.cards img {
+   max-width: 100%;  /* Esto asegura que la imagen ocupe todo el ancho de su contenedor */
+
+   }
 
 
-.icono_1 img:hover{
-
-
-}
