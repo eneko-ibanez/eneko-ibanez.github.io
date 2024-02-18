@@ -16,7 +16,7 @@ h1{
 .contenido {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
+    align-items: center; 
    
 }
 
@@ -63,7 +63,7 @@ h1{
     }
 
     50% {
-        margin-left: 1200px;
+        margin-left: 1100px;
         /* transform: rotate(360deg);*/
 
 
@@ -95,12 +95,20 @@ h1{
 }
 
 .formulario input[type="submit"]{
-    background-color: blueviolet;
+    background-color:rgb(215, 214, 218);
     height: 50px;
     width: 200px;
     margin: 0 auto;
+    border: 3px solid #ccc;
+    border-radius: 5px;
 }
-
+.formulario input[type="submit"]:hover{
+   background-color: black;
+   font-size: 25px;
+   color:white;
+   border-radius: 10px;
+   border:3px solid #ccc
+}
 
 
 
@@ -110,24 +118,60 @@ h1{
     justify-content: space-between;
     max-width: 86%; 
     margin-left: auto; 
-    margin-right: auto; /* Margen derecho para separar del borde de la pantalla */
+    margin-right: auto; 
     gap: 20px;
+    
   
     
 
 }
 
 .cards {
-    flex: 0 0 calc(40% - 20px); /* Ajusta el ancho de las tarjetas */
-    
-    text-align: center;
+    flex: 0 0 calc(40% - 20px); 
     margin: 15px;
+    border: 10px solid #37bcf9;
+    border-radius: 15px;
+    animation: luz 10s infinite linear;
+    padding-bottom: 0px;
     
+   
+}
+.cards1{
+    flex: 0 0 calc(40% - 20px); 
+    margin: 15px;
+    padding-top: 20px;
+    transition: all 100ms;
+}
+.cards1 h2:hover{
+    padding-left: 120px;
+    color: black;
 }
 
-.cards img {
-   max-width: 100%;  /* Esto asegura que la imagen ocupe todo el ancho de su contenedor */
 
+.cards img {
+    max-width: 100%;  
+    
    }
 
+h2{
+    text-align: left;
+    background-color: white;
+}
 
+@keyframes luz {
+    0%{
+        border: 10px solid rgb(215, 214, 218);
+    }
+    25%{
+        border: 10px solid rgb(134, 199, 134);
+    }
+    50%{
+        border: 10px solid rgb(225, 225, 85);
+    }
+    75%{
+        border: 10px solid rgb(234, 192, 192);
+    }
+    100%{
+        border: 10px solid  rgb(215, 214, 218);
+    }
+}
