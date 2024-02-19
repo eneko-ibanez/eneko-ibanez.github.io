@@ -63,7 +63,7 @@ h1{
     }
 
     50% {
-        margin-left: 1100px;
+        margin-left: 1200px;
         /* transform: rotate(360deg);*/
 
 
@@ -146,17 +146,22 @@ h1{
     padding-left: 120px;
     color: black;
 }
-
+.cards h2:hover{
+    padding-left: 120px;
+    color: black;
+}
 
 .cards img {
     max-width: 100%;  
-    
+    transition: all 100ms;
    }
 
 h2{
+    
     text-align: left;
     background-color: white;
 }
+
 
 @keyframes luz {
     0%{
