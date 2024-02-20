@@ -1,0 +1,46 @@
+/* Estilos generales */
+body {
+    font-family: 'Zilla Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.cuerpo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.coches-iconicos {
+    margin-top: 30px;
+}
+
+.coche {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.coche:hover {
+    transform: scale(1.05);
+}
+
+.coche img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0; 
+}
+.coche p {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0; 
+}
