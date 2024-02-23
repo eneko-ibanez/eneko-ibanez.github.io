@@ -31,7 +31,7 @@ body{
    
 }
 
-.titulo h1{
+.titulo22 h1{
     
     position: absolute;
     top: 25%;
@@ -39,6 +39,7 @@ body{
     z-index: 1;
     color: white;
     font-size: 40px;
+    background-color:transparent;
    
 }
 
@@ -132,26 +133,24 @@ a:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (width:360px) {
 
-    h1 {
-        display: none;
-    }
-
-    .coche {
-        height: 200px;
-        /* Ajusta la altura para pantallas más pequeñas */
-    }
-
-    .divparrafo {
-        width: 100%;
-        /* Ancho del párrafo al 100% para pantallas más pequeñas */
-    }
-
-    .card {
-        width: 90%;
-        /* Ancho de las tarjetas al 90% para pantallas más pequeñas */
-    }
 }
 
-@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 768px) {
+
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+
+
+}
+
+
+
