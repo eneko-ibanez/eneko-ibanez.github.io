@@ -134,6 +134,7 @@ h1{
     animation: luz 10s infinite linear;
     padding-bottom: 0px;
     
+    
    
 }
 .cards1{
@@ -142,23 +143,36 @@ h1{
     padding-top: 20px;
     transition: all 100ms;
 }
+
+
+.cards1 h2{
+    text-align: center;
+    color:black;
+    
+}
 .cards1 h2:hover{
     padding-left: 120px;
-    color: black;
+    color:rgb(237, 6, 6);
+    font: size 40px;
+    
+    
+    
 }
 .cards h2:hover{
-    padding-left: 120px;
-    color: black;
+    
+    color:white;
+    background-color:  rgb(215, 214, 218);
 }
+
 
 .cards img {
     max-width: 100%;  
-    transition: all 100ms;
-   }
-
-h2{
     
-    text-align: left;
+   }
+ 
+h2{
+   
+    text-align: center;
     background-color: white;
 }
 
@@ -180,3 +194,4 @@ h2{
         border: 10px solid  rgb(215, 214, 218);
     }
 }
+
