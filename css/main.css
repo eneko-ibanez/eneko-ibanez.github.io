@@ -1,11 +1,12 @@
 /*************************/
 /* DISTRIBUCIÓN CON GRID */
 /*************************/
-.cuerpo{
+.cuerpo_PAG1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: repeat( auto , 200px);
+    background-color: white;
 }
 body{
     margin: 0;
