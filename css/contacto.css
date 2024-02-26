@@ -36,7 +36,7 @@ body {
     position: absolute;
     top: 25%;
     right: 10%;
-    z-index: 1;
+    z-index: -2;
     color: white;
     font-size: 40px;
     background-color: transparent;
@@ -125,17 +125,54 @@ a:hover {
 
 
 
+@media screen and (max-width: 767px) {
+    .cocheimage {
+        height: 200px;
+    }
+
+    .titulo22 h1 {
+        font-size: 30px;
+    }
+
+    .divparrafo {
+        font-size: 16px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .card,
+    .card_content {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .card,
+    .card_content {
+        flex: 0 0 100%;
+    }
+    
+}
 
 
 
+@media screen and (min-width: 1024px) {
+    .cocheimage {
+        height: 400px;
+    }
 
+    .titulo22 h1 {
+        font-size: 40px;
+    }
 
+    .divparrafo {
+        font-size: 20px;
+    }
 
-
-
-@media screen and (width:360px) and (max-width:400px) {}
-
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
-
-@media screen and (min-width: 1024px) {}
+}
