@@ -100,3 +100,21 @@
     display: block;
 }
 
+
+
+
+
+@media screen and (max-width: 1023px) {
+    .mobile_menu {
+        display: block;
+        color: white;
+    }
+
+    .mobile_menu .material-icons {
+        font-size: 35px;
+    }
+
+    .mobile_hidden {
+        display: none;
+    }
+}
