@@ -1,9 +1,9 @@
 * {
     font-family: Arial, sans-serif;
-    
+
 }
 
-body{
+body {
     background-color: white;
 }
 
@@ -14,7 +14,7 @@ body{
 
 }
 
-.coche {
+.cocheimage {
     position: relative;
     display: block;
     height: 400px;
@@ -23,27 +23,26 @@ body{
     z-index: -4;
 }
 
-.coche img {
+.cocheimage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     /* Para mantener la relación de aspecto de la imagen */
-   
+
 }
 
-.titulo {
-    
+.titulo22 h1 {
+
     position: absolute;
-    top: 33%;
+    top: 25%;
     right: 10%;
-    z-index: 1;
-}
-
-h1 {
-    
+    z-index: -2;
     color: white;
     font-size: 40px;
+    background-color: transparent;
+
 }
+
 
 
 
@@ -93,7 +92,7 @@ h1 {
     justify-content: center;
     font-size: 18px;
     margin: 25px;
-    
+
 }
 
 .card img {
@@ -103,12 +102,12 @@ h1 {
 
 }
 
- .card_content:hover {
+.card_content:hover {
     transform: scale(1.1);
-    border:solid rgb(141, 143, 145) 5px;
+    border: solid rgb(141, 143, 145) 5px;
     border-radius: 15px;
     transition: all 100ms;
-    
+
 }
 
 
@@ -126,34 +125,54 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-
-    h1 {
-        display: none;
+@media screen and (max-width: 767px) {
+    .cocheimage {
+        height: 200px;
     }
 
-    .coche {
-        height: 200px;
-        /* Ajusta la altura para pantallas más pequeñas */
+    .titulo22 h1 {
+        font-size: 30px;
     }
 
     .divparrafo {
-        width: 100%;
-        /* Ancho del párrafo al 100% para pantallas más pequeñas */
+        font-size: 16px;
     }
 
-    .card {
-        width: 90%;
-        /* Ancho de las tarjetas al 90% para pantallas más pequeñas */
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .card,
+    .card_content {
+        flex: 0 0 100%;
     }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .card,
+    .card_content {
+        flex: 0 0 100%;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .cocheimage {
+        height: 400px;
+    }
+
+    .titulo22 h1 {
+        font-size: 40px;
+    }
+
+    .divparrafo {
+        font-size: 20px;
+    }
+
+}
