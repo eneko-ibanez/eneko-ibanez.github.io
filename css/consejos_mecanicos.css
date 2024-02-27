@@ -12,8 +12,9 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-  
-td, th {
+
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -28,7 +29,7 @@ tr:nth-child(even) {
     margin: auto;
     display: grid;
     grid-template-columns: 70% auto;
-    
+
 }
 
 .cuerpo {
@@ -37,8 +38,8 @@ tr:nth-child(even) {
     border-style: outset;
     border-color: rgb(209, 209, 209);
     padding-inline: 10px;
-    
-    
+
+
 }
 
 p {
@@ -59,20 +60,20 @@ p {
 
 .vertical {
     border-style: outset;
-    border-color:  rgb(168, 167, 167);
+    border-color: rgb(168, 167, 167);
     height: 2215px;
     width: 400px;
     background-color: rgb(206, 206, 206);
 }
 
-.borde{
+.borde {
     border-style: groove;
     border-color: rgb(168, 167, 167);
     width: 370px;
     height: 475px;
     margin: auto;
     margin-bottom: 90px;
-    margin-top: 10px; 
+    margin-top: 10px;
     background-color: rgb(240, 240, 240);
 }
 
@@ -81,13 +82,27 @@ p {
     height: 450px;
     margin: auto;
     margin-bottom: 10px;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 
 
-.vertical1 { background-image: url(../imagenes/vertical1.jpg); background-size: cover; }
-.vertical2 { background-image: url(../imagenes/vertical2.avif); background-size: cover; }
-.mapfre { background-image: url(../imagenes/mapfre.png); background-size: cover; }
-.seguro { background-image: url(../imagenes/seguro_vida.webp); background-size: cover;
- }
+.vertical1 {
+    background-image: url(../imagenes/vertical1.jpg);
+    background-size: cover;
+}
+
+.vertical2 {
+    background-image: url(../imagenes/vertical2.avif);
+    background-size: cover;
+}
+
+.mapfre {
+    background-image: url(../imagenes/mapfre.png);
+    background-size: cover;
+}
+
+.seguro {
+    background-image: url(../imagenes/seguro_vida.webp);
+    background-size: cover;
+}
