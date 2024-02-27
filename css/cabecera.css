@@ -44,7 +44,9 @@
 }
 
 .cabecera a:hover {
-    background-color: #00b7ff;
+    background-color:white;
+    color:#00b7ff;
+    /* background-color: #00b7ff */
 }
 .cabecera a:hover {
     opacity: 85%;

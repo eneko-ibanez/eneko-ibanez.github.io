@@ -123,6 +123,10 @@ a:hover {
     color: rgb(35, 120, 206);
 }
 
+.contacto{
+    display: none;
+}
+
 
 
 @media screen and (max-width: 767px) {
