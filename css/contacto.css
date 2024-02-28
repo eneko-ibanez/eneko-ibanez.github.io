@@ -71,7 +71,6 @@ body {
 .tarjetas {
     display: flex;
     justify-content: space-between;
-    /* Espacio uniforme entre las tarjetas */
     flex-wrap: wrap;
     /* Envolver las tarjetas en múltiples líneas si es necesario */
     width: 90%;
@@ -156,7 +155,7 @@ a:hover {
     }
 
     .titulo22 h1 {
-        
+
         top: 10px;
     }
 
