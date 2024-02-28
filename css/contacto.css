@@ -123,9 +123,6 @@ a:hover {
     color: rgb(35, 120, 206);
 }
 
-.contacto{
-    display: none;
-}
 
 
 
@@ -135,7 +132,8 @@ a:hover {
     }
 
     .titulo22 h1 {
-        font-size: 30px;
+        font-size: 25px;
+        top: 10px;
     }
 
     .divparrafo {
@@ -155,6 +153,11 @@ a:hover {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .tarjetas {
         flex-direction: column;
+    }
+
+    .titulo22 h1 {
+        
+        top: 10px;
     }
 
     .card,
