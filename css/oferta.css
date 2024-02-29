@@ -3,6 +3,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-inline: 5%;
+    position: relative;
+    z-index: -10;
 }
 
 .tarjeta {
@@ -46,4 +48,6 @@
 .tarjeta:hover p {
     opacity: 1; 
 }
-
+body{
+    z-index: -11;
+}
