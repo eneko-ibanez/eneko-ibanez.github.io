@@ -12,6 +12,7 @@
 
 body {
     background-color: rgb(240, 240, 240) ;
+    margin: 0;
 }
 
 .organizacion {
@@ -23,7 +24,7 @@ body {
 
 .cuerpo {
     width: 80%;
-    margin: auto;
+    margin: 0;
     margin-top: 15px;
     text-align: justify; 
     border-color:rgb(18, 19, 20) ;
