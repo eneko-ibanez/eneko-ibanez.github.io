@@ -125,7 +125,7 @@ a:hover {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
     .cocheimage {
         height: 200px;
     }
