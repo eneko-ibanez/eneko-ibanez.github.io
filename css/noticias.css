@@ -109,13 +109,32 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-    .flex {
-        display: flex;
+ 
+    .organizacion{
+        margin: auto;
+    }
+    .cuerpo {
+        margin: auto;
     }
 
     .borde {
-        margin-inline: 10px;
+        width: 270px;
+        height: 385px;
+        margin-bottom: 90px;
+        margin: 10px;
+        
     }
+
+    .borde div {
+        width: 245px;
+        height: 360px;
+    }
+
+    .vertical {
+        height: 100%;
+        width: 300px;
+    }
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
