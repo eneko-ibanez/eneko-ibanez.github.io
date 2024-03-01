@@ -72,12 +72,9 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* Envolver las tarjetas en múltiples líneas si es necesario */
     width: 90%;
     margin-left: auto;
-    /* Centrar el párrafo horizontalmente */
     margin-right: auto;
-    /* Centrar el párrafo horizontalmente */
 }
 
 .card,
@@ -97,8 +94,6 @@ body {
 .card img {
     width: 100%;
     height: auto;
-    /* Para mantener la proporción de la imagen */
-
 }
 
 .card_content:hover {
@@ -106,7 +101,6 @@ body {
     border: solid rgb(141, 143, 145) 5px;
     border-radius: 15px;
     transition: all 100ms;
-
 }
 
 
@@ -125,7 +119,7 @@ a:hover {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
     .cocheimage {
         height: 200px;
     }

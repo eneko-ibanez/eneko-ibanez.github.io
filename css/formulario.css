@@ -219,4 +219,111 @@ h2 {
 }
 
 
+@media screen and (min-width: 360px) and (max-width: 400px) {
+    h2 {
+        font-size: 15px;
+        text-align: center;
+        background-color: white;
+    }
 
+    @keyframes desplazamiento {
+        0% {
+            margin-left: 0px;
+            /*  transform: rotate(0deg);*/
+        }
+
+        50% {
+            margin-left: 280px;
+            /* transform: rotate(360deg);*/
+        }
+
+        100% {
+            margin-left: 0px;
+            /*transform: rotate(0deg);*/
+        }
+    }
+
+    .cards1 h2:hover {
+        padding-left: 10px;
+        color: rgb(6, 121, 237);
+        font: size 40px;
+
+    }
+
+    .cards {
+        flex: 0 0 calc(90% - 20px);
+        margin: 15px;
+        border: 10px solid #37bcf9;
+        border-radius: 15px;
+        animation: luz 10s infinite linear;
+        padding-bottom: 0px;
+
+
+
+    }
+
+    .animation {
+        animation-name: desplazamiento;
+        animation-duration: 5s;
+
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .animation {
+        animation-name: desplazamiento;
+        animation-duration: 7s;
+
+    }
+
+
+    @keyframes desplazamiento {
+        0% {
+            margin-left: 30px;
+            /*  transform: rotate(0deg);*/
+        }
+
+        50% {
+            margin-left: 820px;
+            /* transform: rotate(360deg);*/
+        }
+
+        100% {
+            margin-left: 30px;
+            /*transform: rotate(0deg);*/
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .animation {
+        animation-name: desplazamiento;
+        animation-duration: 10s;
+
+    }
+
+    @keyframes desplazamiento {
+        0% {
+            margin-left: 118px;
+            /*  transform: rotate(0deg);*/
+        }
+
+        50% {
+            margin-left: 1200px;
+            /* transform: rotate(360deg);*/
+        }
+
+        100% {
+            margin-left: 118px;
+            /*transform: rotate(0deg);*/
+        }
+    }
+
+}
