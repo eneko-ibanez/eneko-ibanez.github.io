@@ -67,3 +67,48 @@ body {
 .vertical2 { background-image: url(../imagenes/vertical2.avif); background-size: cover; }
 .mapfre { background-image: url(../imagenes/mapfre.png); background-size: cover; }
 
+@media screen and (min-width: 360px) and (max-width: 400px) {
+    .organizacion {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        .vertical {
+            display: none;
+        }
+        .vertical_iz {
+            display: none;
+        }
+    }
+    .cuerpo {
+        width: 90%;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .organizacion {
+        display: flex;
+        .vertical {
+            margin-left: 20px;
+        }
+    }
+
+    .borde{
+        width: 270px;
+        height: 385px;
+        margin-bottom: 90px;
+        margin: 10px;
+    }
+    
+    .borde div {
+        width: 245px;
+        height: 360px;
+    }
+    .vertical {
+        height: 100%;
+        width: 300px;
+    }
+}
