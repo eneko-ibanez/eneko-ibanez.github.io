@@ -27,6 +27,7 @@ tr:nth-child(even) {
 .distribucion {
     width: 95%;
     margin: auto;
+    margin-top: 25px;
     display: grid;
     grid-template-columns: 70% auto;
 
@@ -95,6 +96,14 @@ p {
     background-image: url(../imagenes/seguro_vida.webp);
     background-size: cover;
 }
+@media screen and (min-width: 1024px){
+    .distribucion {
+        display: flex;
+    }
+    .borde {
+        margin-inline: 10px;
+    }
+}
 
 @media screen and (min-width: 360px) and (max-width: 400px) {
     .distribucion {
@@ -109,6 +118,7 @@ p {
 
     .cuerpo {
         width: 90%;
+        margin: auto;
     }
 
     h1,

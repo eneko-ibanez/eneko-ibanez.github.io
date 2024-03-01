@@ -11,13 +11,13 @@
 }
 
 body {
-    background-color: rgb(240, 240, 240) ;
+    background-color: rgb(240, 240, 240);
     margin: 0;
 }
 
 .organizacion {
     display: grid;
-    grid-template-columns: 15% auto 30%;
+    grid-template-columns: 15% 55% auto;
     background-color: rgb(240, 240, 240);
     margin-top: 10px;
 }
@@ -26,13 +26,13 @@ body {
     width: 80%;
     margin: 0;
     margin-top: 15px;
-    text-align: justify; 
-    border-color:rgb(18, 19, 20) ;
+    text-align: justify;
+    border-color: rgb(18, 19, 20);
 }
 
 .vertical {
     border-style: groove;
-    border-color:  rgb(168, 167, 167);
+    border-color: rgb(168, 167, 167);
     height: 100%;
     width: 400px;
     background-color: rgb(206, 206, 206);
@@ -40,18 +40,19 @@ body {
 
 .vertical_iz {
     border-style: groove;
-    border-color:  rgb(168, 167, 167);
+    border-color: rgb(168, 167, 167);
     height: 100%;
     background-color: rgb(206, 206, 206);
 }
-.borde{
+
+.borde {
     border-style: groove;
     border-color: rgb(168, 167, 167);
     width: 370px;
     height: 475px;
     margin: auto;
     margin-bottom: 90px;
-    margin-top: 10px; 
+    margin-top: 10px;
     background-color: rgb(240, 240, 240);
 }
 
@@ -60,33 +61,61 @@ body {
     height: 450px;
     margin: auto;
     margin-bottom: 10px;
-    margin-top: 10px; 
+    margin-top: 10px;
 
 }
 
-.vertical1 { background-image: url(../imagenes/vertical1.jpg); background-size: cover; }
-.vertical2 { background-image: url(../imagenes/vertical2.avif); background-size: cover; }
-.mapfre { background-image: url(../imagenes/mapfre.png); background-size: cover; }
+.vertical1 {
+    background-image: url(../imagenes/vertical1.jpg);
+    background-size: cover;
+}
+
+.vertical2 {
+    background-image: url(../imagenes/vertical2.avif);
+    background-size: cover;
+}
+
+.mapfre {
+    background-image: url(../imagenes/mapfre.png);
+    background-size: cover;
+}
 
 @media screen and (min-width: 360px) and (max-width: 400px) {
     .organizacion {
         display: grid;
         grid-template-columns: auto;
         width: 100%;
+
         .vertical {
             display: none;
         }
+
         .vertical_iz {
             display: none;
         }
     }
+
     .cuerpo {
-        width: 90%;
+        width: 100%;
+        margin: auto;
     }
-    h1, h2, h3 {
+
+    h1,
+    h2,
+    h3 {
         text-align: center;
     }
 
+}
+
+@media screen and (min-width: 1024px) {
+    .flex {
+        display: flex;
+    }
+
+    .borde {
+        margin-inline: 10px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -97,19 +126,28 @@ body {
         }
     }
 
-    .borde{
+    .borde {
         width: 270px;
         height: 385px;
         margin-bottom: 90px;
         margin: 10px;
     }
-    
+
     .borde div {
         width: 245px;
         height: 360px;
     }
+
     .vertical {
         height: 100%;
         width: 300px;
     }
+    .vertical_iz {
+        display: none;
+    }
+
+    .cuerpo {
+        margin-left: 20px;
+    }
 }
+
