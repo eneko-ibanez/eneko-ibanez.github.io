@@ -23,8 +23,8 @@ h2 {
 
 .carta {
     display: inline-block;
-    width:calc(33% - 14px);
-    height: 400px;
+    width: calc(33% - 14px);
+    height: 350px;
     text-align: justify;
     margin-inline: 5px;
     margin-bottom: 10px;
@@ -33,12 +33,35 @@ h2 {
     border-radius: 5%;
 }
 
-.mecanica { background-image: url(../imagenes/mecanica.png); background-size: cover; }
-.noticias { background-image: url(../imagenes/noticias.jpg); background-size: cover; }
-.celectrico { background-image: url(../imagenes/coche_electrico.jpg); background-size: cover; }
-.cgasolina { background-image: url(../imagenes/coche_gasolina.jpg); background-size: cover; }
-.motos { background-image: url(../imagenes/moto.jpg); background-size: cover; }
-.preguntas { background-image: url(../imagenes/preguntas.jpg); background-size: cover; }
+.mecanica {
+    background-image: url(../imagenes/mecanica.png);
+    background-size: cover;
+}
+
+.noticias {
+    background-image: url(../imagenes/noticias.jpg);
+    background-size: cover;
+}
+
+.celectrico {
+    background-image: url(../imagenes/coche_electrico.jpg);
+    background-size: cover;
+}
+
+.cgasolina {
+    background-image: url(../imagenes/coche_gasolina.jpg);
+    background-size: cover;
+}
+
+.motos {
+    background-image: url(../imagenes/moto.jpg);
+    background-size: cover;
+}
+
+.preguntas {
+    background-image: url(../imagenes/preguntas.jpg);
+    background-size: cover;
+}
 
 .centrar {
     margin-top: auto;
@@ -60,11 +83,11 @@ h2 {
 
 .descripcion p {
     position: absolute;
-    top: 33%;
+    top: 30%;
     margin-top: auto;
     margin-bottom: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    
+    padding-inline: 50px;
 }
 
 
@@ -79,6 +102,15 @@ a {
 
 
 
+@media screen and (min-width: 360px) and (max-width: 400px) {
+    .carta {
+            width: calc(100% - 15px);
+        }
+}
 
-
-
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .carta {
+        width: calc(50% - 15px);
+        height: 375px;
+    }
+}
