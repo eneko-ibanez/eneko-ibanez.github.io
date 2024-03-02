@@ -53,6 +53,10 @@ tr:hover {
     
 }
 
+.tabla td{
+    color: black;
+}
+
 .cuerpo {
     width: 80%;
     margin: auto;
