@@ -4,11 +4,14 @@
 }
 
 .preguntas {
-.h1 {
-    color: rgb(154, 154, 233);
+h1 {
     margin-bottom: 100px;
 }
 
+h2, h3, p {
+    margin-inline:  30px;
+    
+}
 .a1 {
     width: 100%;
     border-style: outset;
@@ -51,11 +54,29 @@
 
 .anuncio {
     width: 100%;
-    height: 100px;
+    height: auto;
     margin-bottom: 100px;    
 }
 .anuncio img {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
+}
+
+@media screen and (min-width: 360px) and (max-width: 400px) {
+    .preguntas h1{
+        margin-bottom: 30px;
+    }
+    .anuncio {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .preguntas h1{
+        margin-bottom: 50px;
+    }
+    .anuncio {
+        margin-bottom: 0px;
+    }
 }
